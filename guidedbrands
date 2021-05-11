@@ -1,0 +1,37 @@
+var cssStyle = document.createElement("style");
+var rules = document.createTextNode(
+  `.rguide-container { background-color: #EEEEEE ; }
+
+   .rguide-button-primary 
+   { background-color: #007ccc ; border-color: #D4D4D4; color: rgb(255, 255, 255) ; 
+    font-family: "Lato", "sans-serif", "simple-line-icons";}
+
+   .rguide-button-primary:hover { background-color: #FFFFFF ; border-color: color: rgb(227, 227, 227); color: #2F318C; }
+
+
+   .rguide-button-secondary { background-color: color: rgb(227, 227, 227) ; border-color: #D4D4D4 ; color: #000000 ; 
+    font-family: "Lato", "sans-serif", "simple-line-icons"; }
+
+   .rguide-button-secondary:hover {background-color: color: rgb(227, 227, 227); border-color: #0074E0; color: #007ccc ; }
+   
+   .rguide-markdown p,
+   .rguide-markdown h1,
+   .rguide-markdown h2,
+   .rguide-markdown h3,
+   .rguide-markdown h4,
+   .rguide-markdown h5,
+   .rguide-markdown h6,
+   .rguide-markdown ul,
+   .rguide-markdown li,
+   .rguide-markdown a,
+   .rguide-markdown span,
+   .rguide-markdown b,
+   .rguide-markdown strong { color: #12171D; font-family: "Lato", "sans-serif", "simple-line-icons";}
+`
+);
+cssStyle.appendChild(rules);
+parent.document.documentElement.style.setProperty(
+  "--rguide-bg-color",
+  "rgb(255, 255, 255)"
+);
+parent.document.getElementsByTagName("head")[0].appendChild(cssStyle);
